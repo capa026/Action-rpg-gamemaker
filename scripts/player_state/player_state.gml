@@ -19,7 +19,7 @@ function player_state_free(){
 	// When this state is called check the direction and check if the player is rolling, then change it to the apropriate Sprite
 	if((direction == 90 || direction == 270) && sprite_index == spr_player_roll_right || sprite_index == spr_player_hurt_right || sprite_index == spr_player_atk_right) sprite_index = spr_player_run_right
 	if((direction == 90 || direction == 270) && sprite_index == spr_player_roll_left || sprite_index == spr_player_hurt_left || sprite_index == spr_player_atk_left) sprite_index = spr_player_run_left
-	
+	// New comment added
 	if (input_magnitude != 0) {
 		direction = input_direction;
 		if (_facing_right) {
